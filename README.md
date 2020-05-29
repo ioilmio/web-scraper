@@ -54,7 +54,7 @@ If you want to install and use the scraper you need:
   ```
    $ git clone https://github.com/ioilmio/web-scraper.git
   ```
-* and type on ypour terminal scraper to get the list of articles 
+* and type on your terminal scraper to get the list of articles 
 
 ### Automated test ###
 
