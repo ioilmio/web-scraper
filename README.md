@@ -85,3 +85,4 @@ Give a ⭐️ if you like this project!
 * [The Odin Project](https://www.theodinproject.com/)
 * [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
 * [Nokogiri tutorial](https://www.youtube.com/watch?v=b3CLEUBdWwQ)
+* [Dev.to](https://dev.to) For the their data, and awesomeness.
