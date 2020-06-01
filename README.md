@@ -54,7 +54,7 @@ If you want to install and use the scraper you need:
   ```
 * and type on your terminal bin/scraper.rb to get the list of articles.
 
-You will get an Hash, in this Hash you can find clickable links for your article of interest.
+You will get a lixt.txt file containing an Hash, in this Hash you can find clickable links for your article of interest.
 
 ### Automated test ###
 
