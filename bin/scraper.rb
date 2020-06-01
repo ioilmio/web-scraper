@@ -16,7 +16,7 @@ class Scraper
     @title_array
   end
 
-  def get_author(url, _selector, css_class)
+  def get_author(url, css_class)
     doc = Nokogiri::HTML(URI.open(url))
     @author_array = doc.css(css_class).text.split("\n")
     @author_array.each do |item|
@@ -29,16 +29,29 @@ class Scraper
     @author_array
   end
 
-  def get_post_url(url, selector)
+  def get_post_url(url, css_class)
     doc = Nokogiri::HTML(URI.open(url))
-    @url_array = doc.css(selector).attribute('href').value
+    @url_array = []
+    doc.css(css_class).collect do |urls|
+      @url_array << urls.attribute('href').value
+    end
+    @url_array.collect do |string|
+      string.prepend('https://')
+    end
     @url_array
   end
-end
 
-my_scraper = Scraper.new.get_title('https://dev.to/', 'a', '.crayons-story__title')
-my_scraper1 = Scraper.new.get_author('https://dev.to/', 'a', '.crayons-story__secondary')
-my_scraper2 = Scraper.new.get_post_url('https://dev.to/', 'a[id^="article-link"]')
-p my_scraper.first.class
-p my_scraper2.class
-p my_scraper1.first.class
+  def hashify_els
+    list = {}
+    author_array = get_author('https://dev.to/', '.crayons-story__secondary')
+    title_array = get_title('https://dev.to/', 'a', '.crayons-story__title')
+    post_urls = get_post_url('https://dev.to/', '[id^="article-link-"]')
+    author_array.zip(title_array, post_urls) { |author, title, post| list[author.to_sym] = title, post }
+    p list
+  end
+end
+list = Scraper.new.hashify_els
+
+File.open('list.txt', 'w') do |file|
+  file.write(list)
+end
