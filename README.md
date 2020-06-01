@@ -23,9 +23,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-  * [Live Version](#live-version)
   * [Usage](#usage)
-* [Game Rules](#game-rules)
 * [Author](#author)
 * [Contributing](#contributing)
 * [Acknowledgements](#acknowledgements)
@@ -54,12 +52,14 @@ If you want to install and use the scraper you need:
   ```
    $ git clone https://github.com/ioilmio/web-scraper.git
   ```
-* and type on your terminal scraper to get the list of articles 
+* and type on your terminal bin/scraper.rb to get the list of articles.
+
+You will get an Hash, in this Hash you can find clickable links for your article of interest.
 
 ### Automated test ###
 
-To run automated tests you can just type rspec in the terminal.
-You can also take a look at the doc for the test running rspec --format doc
+To run automated tests you can just type rspec in the terminal inside the main directory.
+You can also take a look at the doc for the test running rspec --format doc in the same directory.
 
 
 ## Author
