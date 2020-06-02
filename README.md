@@ -30,7 +30,7 @@
 
 ## About The Project
 
-This is a scraper, a program written in Ruby.This specific scraper is built to scrape posts and authors from "Dev.to" site.Using the Nokogiri Gem to parse the HTML frome the site,open URI to open the sile in security, and some string manipulations to format them better for human readability.
+This is a scraper, a program written in Ruby.This specific scraper is built to scrape posts and authors from "Dev.to" site.Using the Nokogiri Gem to parse the HTML from the site,open URI to open the file in security, and some string manipulations to format them better for human readability.
 
 
 
@@ -47,19 +47,33 @@ This project was built using these technologies.
 ### Usage
 
 If you want to install and use the scraper you need: 
+
 * Ruby installed in your computer, version 2.6.5 recommended.
-  - Clone over HTTPS:
+* Go to https://github.com/ioilmio/web-scraper
+* Click the green button
+  
+  - Clone over HTTPS
+
+* Go into your terminal and type
+
   ```
    $ git clone https://github.com/ioilmio/web-scraper.git
   ```
-* and type on your terminal bin/scraper.rb to get the list of articles.
+  or 
+  ```
+  $ git clone ctrl + shift + v
+  ```
+
+* Type on your terminal bin/scraper.rb to get a list of articles.
 
 You will get a lixt.txt file containing an Hash, in this Hash you can find clickable links for your article of interest.
 
 ### Automated test ###
 
-To run automated tests you can just type rspec in the terminal inside the main directory.
-You can also take a look at the doc for the test running rspec --format doc in the same directory.
+To run automated tests you can just type <pre><code>rspec
+</code></pre> in the terminal inside the main directory.
+You can also take a look at the doc for the test running <pre><code>rspec --format doc
+</code></pre> in the same directory.
 
 
 ## Author
