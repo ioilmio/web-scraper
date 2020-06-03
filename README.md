@@ -14,8 +14,7 @@
     <br />
     <a href="https://github.com/ioilmio/web-scraper/issues">Report Bug</a>
     ·
-    [![Run on Repl.it](https://repl.it/badge/github/ioilmio/web-scraper)](https://repl.it/github/ioilmio/web-scraper)
-    .
+  
     <a href="https://github.com/ioilmio/web-scraper/issues">Request Feature</a>
   </p>
 </p>
@@ -45,7 +44,8 @@ This project was built using these technologies.
 * Nokogiri Gem
 * Bundler Gem (for repl.it live Demo)
 
-
+## Live version 
+  [![Run on Repl.it](https://repl.it/badge/github/ioilmio/web-scraper)](https://repl.it/github/ioilmio/web-scraper)
 ### Usage
 
 If you want to install and use the scraper you need: 
