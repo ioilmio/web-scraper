@@ -14,6 +14,8 @@
     <br />
     <a href="https://github.com/ioilmio/web-scraper/issues">Report Bug</a>
     ·
+    [![Run on Repl.it](https://repl.it/badge/github/ioilmio/web-scraper)](https://repl.it/github/ioilmio/web-scraper)
+    .
     <a href="https://github.com/ioilmio/web-scraper/issues">Request Feature</a>
   </p>
 </p>
